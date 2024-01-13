@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rock-paper-scissor.css">
     <title>Rock Paper Scissor</title>
 </head>
 <body>
-    <p>Rock Paper Scissor</p>
-    <button onclick="player('rock')">Rock</button>
-    <button onclick="player('paper')">Paper</button>
-    <button onclick="player('scissor')">Scissor</button>
+    <p class="title">Rock Paper Scissor</p>
+    <button class="btn" onclick="player('rock')"><img src="images/rock-emoji.png" class="images"></button>
+    <button class="btn" onclick="player('paper')"><img src="images/paper-emoji.png" class="images"></button>
+    <button class="btn" onclick="player('scissor')"><img src="images/scissor-emoji.png" class="images"></button>
+
+
+    <p class="js-result result"></p>
+    <p class="js-moves moves"></p>
+    <p class="js-score score"></p>
+    
+
+    <button class="reset" onclick="reset()">Reset Score</button>
 
     <script src="rock-paper-scissor.js"></script>
 </body>
